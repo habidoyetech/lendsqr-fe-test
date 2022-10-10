@@ -1,0 +1,22 @@
+@mixin box-sizing() {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  @include box-sizing()
+}
+
+// Color
+$primary-color: #FFFFFF;
+
+
+// Fonts Size
+$big-font-size: 3rem;
+$h1-size: 2rem;
+$h2-size: 1.5rem;
+$normal-size: 1rem;
+$small-size: 0.8rem;
+$smaller-size: 05rem;
