@@ -1,3 +1,4 @@
+@use '../../index';
 
 .container {
   margin: 0 auto;
@@ -38,8 +39,25 @@
   .right-log-in-page {
     flex: 1;
     display: flex;
-    
     justify-content: center;
     flex-direction: column;
+    font-family: index.$font-family;
+
+    h1 {
+      font-size: index.$h1-size;
+      font-weight: index.$font-family;
+      color: index.$first-font-color;
+      margin: 0;
+    }
+
+    p {
+      font-size: index.$small-size;
+      color: index.$second-font-color;
+      margin-top: .5rem;
+      font-family: inherit;
+      margin-bottom: 2rem;
+    }
+
+    
   }
 }

@@ -6,15 +6,24 @@
   margin: 0 auto;
 }
 
+
+$font-family: 'Maven Pro', sans-serif; 
+
+
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  @include box-sizing()
+  font-family: $font-family;
+  @include box-sizing();
 }
 
 // Color
 $primary-color: #FFFFFF;
+$first-font-color: #213F7D;
+$second-font-color: #545F7D;
+$button-color: #39CDCC;
+
 
 
 // Fonts Size
