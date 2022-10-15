@@ -9,13 +9,15 @@ const LogInPage = () => {
     <div className='log-in-page'>
       <div className='log-in container'>
         <div className='left-log-in-page container'>
-          <div className='company-logo'>
-            <img className='first-logo' src={Logo} alt="Logo" />
-            <img className='second-logo' src={LogoWord} alt="Logo" />
-          </div>
-          <div className='login-image'>
-            <img src={SideImage} alt="" />
-          </div>
+          <div>
+            <div className='company-logo'>
+              <img className='first-logo' src={Logo} alt="Logo" />
+              <img className='second-logo' src={LogoWord} alt="Logo" />
+            </div>
+            <div className='login-image'>
+              <img src={SideImage} alt="" />
+            </div>
+          </div>  
         </div>
         <div className='right-log-in-page container form page'>
           <div className="form-container">
@@ -30,16 +32,13 @@ const LogInPage = () => {
                 <input type="password" />
                 <label className='placeholder' htmlFor="password">Password</label>
               </div>
-              <div>
-                <a href="#">Forgot Password</a>
+              <div className='forget-password-link-container'>
+                <a className='forget-password-link' href="#">Forgot Password?</a>
               </div>
-              <button>Log in</button>
+              <button className='log-in-button' type='submit'>Log in</button>
             </form>
-
           </div>
-      
         </div>
-
       </div> 
     </div>
   )
