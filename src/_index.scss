@@ -18,11 +18,16 @@ body {
   @include box-sizing();
 }
 
+a {
+  text-decoration: none;
+}
+
 // Color
 $primary-color: #FFFFFF;
 $first-font-color: #213F7D;
 $second-font-color: #545F7D;
 $button-color: #39CDCC;
+$third-font-color: rgba(84, 95, 125, 0.15);
 
 
 

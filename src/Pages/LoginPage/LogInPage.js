@@ -18,22 +18,26 @@ const LogInPage = () => {
           </div>
         </div>
         <div className='right-log-in-page container form page'>
-          <h1> Welcome </h1>
-          <p>Enter Login details</p>
-          <form action="#">
-            <div className='email-container'>
-              <label htmlFor="email">Email</label>
-              <input type="email" required/>
-            </div>
-            <div className='password-container'>
-              <label htmlFor="password">Password</label>
-              <input type="password" />
-            </div>
-            <div>
-              <a href="#">Forgot Password</a>
-            </div>
-            <button>Log in</button>
-          </form>
+          <div className="form-container">
+            <h1> Welcome! </h1>
+            <p>Enter Login details</p>
+            <form action="#">
+              <div className='input-block email-container'>
+                <input type="email" required/>
+                <label className='placeholder' htmlFor="email">Email</label>
+              </div>
+              <div className='input-block password-container'>
+                <input type="password" />
+                <label className='placeholder' htmlFor="password">Password</label>
+              </div>
+              <div>
+                <a href="#">Forgot Password</a>
+              </div>
+              <button>Log in</button>
+            </form>
+
+          </div>
+      
         </div>
 
       </div> 
