@@ -90,7 +90,7 @@
           box-sizing: border-box;
         }
 
-
+        
         label.placeholder {
           position: absolute;
           top: 1rem;
@@ -105,6 +105,20 @@
           opacity: 0.6;
         }
 
+        #togglePassword {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          color: index.$second-font-color;
+          opacity: 0.6;
+          color: index.$button-color;
+          text-transform: uppercase;
+          font-size: index.$normal-size;
+          cursor: pointer;
+          font-weight: 500;
+        }
+
+        input:valid + .placeholder,
         input:focus + .placeholder {
           transform: scale(0.9) translateY(-40px);
         }
