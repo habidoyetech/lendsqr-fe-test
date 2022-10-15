@@ -9,6 +9,9 @@
 
 $font-family: 'Maven Pro', sans-serif; 
 
+*, *::after, *::before {
+  @include box-sizing();
+}
 
 body {
   margin: 0;

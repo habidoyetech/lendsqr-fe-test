@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     background-color: index.$ligt-dark-primary-color;
+    padding: 1.5rem;
     
 
     .company-logo {
@@ -56,7 +57,7 @@
 
       h1 {
         font-size: index.$big-font-size;
-        font-weight: index.$font-family;
+        font-family: index.$font-family;
         color: index.$first-font-color;
         margin: 0;
       }
@@ -156,4 +157,53 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 960px) {
+
+  .log-in {
+    flex-direction: column;
+    align-items: center;
+
+    .left-log-in-page {
+      width: 100%;
+      flex: none;
+
+      .company-logo {
+        margin: 1rem 0;
+      }
+      
+      .login-image {
+        display: none;
+      }
+    }
+
+    .right-log-in-page {
+      width: 100%;
+    }
+  } 
+}
+
+@media screen and (max-width: 370px) {
+
+  .log-in {
+
+    .right-log-in-page {
+
+      .form-container {
+
+        h1 {
+          font-size: index.$h1-size;
+        }
+
+        p {
+          font-size: index.$normal-size;
+        }
+      }
+
+    }
+  }
+  
+  
+  
 }
