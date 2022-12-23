@@ -1,12 +1,13 @@
 import './app.scss'
-import LogInPage from './Pages/LoginPage/LogInPage';
+import Auth from './Pages/LoginPage/Auth';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <LogInPage />
+      <Auth />
       
     </div>
   );

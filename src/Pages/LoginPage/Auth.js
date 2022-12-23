@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import LogoWord from '../../images/lendsqr.svg'
 import Logo from '../../images/Union.svg'
 import SideImage from '../../images/pablo-sign-in 1.svg'
-import './loginpage.scss'
+import './auth.scss'
 
-const LogInPage = () => {
+const Auth = () => {
 
   const [type, setType] = useState('password')
 
@@ -56,4 +56,4 @@ const LogInPage = () => {
   )
 }
 
-export default LogInPage
+export default Auth;
