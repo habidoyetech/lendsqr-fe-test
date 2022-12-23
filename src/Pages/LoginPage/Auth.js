@@ -51,7 +51,7 @@ const Auth = () => {
                   <i onClick={changeInputType} id='togglePassword'>show</i>
                 </div>
                 <div className='forget-password-link-container'>
-                  <a className='forget-password-link' href="#">Forgot Password?</a>
+                  <span className='forget-password-link' href="#">Forgot Password?</span>
                 </div>
                 <button className='log-in-button' type='submit'>Log in</button>
                 <p className='no-account'>Don't have an account? Please <span onClick={changeAuthMode}>Sign Up</span></p>

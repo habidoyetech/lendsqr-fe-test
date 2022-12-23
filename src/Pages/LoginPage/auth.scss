@@ -88,7 +88,7 @@
           text-transform: uppercase;
           font-size: index.$normal-size;
           color: index.$primary-color;
-          width: 200%;
+          
           padding: 1rem;
           background-color: index.$button-color;
           border-radius: .25rem;
@@ -146,7 +146,7 @@
           opacity: 0.6;
           color: index.$button-color;
           text-transform: uppercase;
-          font-size: index.$normal-size;
+          font-size: index.$small-size;
           cursor: pointer;
           font-weight: 500;
         }
@@ -201,6 +201,32 @@
   }
 }
 
+@media screen and (max-width: 1332px) {
+
+  .log-in {
+    .right-log-in-page {
+    
+
+      .form-container {
+  
+        .grid {
+          grid-template-columns: 1fr;
+  
+          .wide {
+            width: 100%;
+            
+          }
+        }
+      }
+  
+    }
+
+  }
+
+  
+  
+}
+
 @media screen and (max-width: 960px) {
 
   .log-in {
@@ -222,6 +248,9 @@
 
     .right-log-in-page {
       width: 100%;
+
+     
+      
     }
   } 
 }
@@ -240,6 +269,10 @@
 
         p {
           font-size: index.$normal-size;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
         }
       }
 
