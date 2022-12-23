@@ -155,6 +155,16 @@
         font-weight: 800;
         cursor: pointer;
       }
+
+      .no-account {
+        font-size: index.$small-size;
+
+        span {
+          color: index.$button-color;
+          cursor: pointer;
+          font-weight: 600;
+        }
+      }
     }
   }
 }

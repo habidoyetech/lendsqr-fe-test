@@ -48,6 +48,7 @@ const Auth = () => {
                 <a className='forget-password-link' href="#">Forgot Password?</a>
               </div>
               <button className='log-in-button' type='submit'>Log in</button>
+              <p className='no-account'>Don't have an account? Please <span>Sign Up</span></p>
             </form>
           </div>
         </div>
