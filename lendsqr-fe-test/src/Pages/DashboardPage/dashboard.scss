@@ -1,0 +1,34 @@
+@use '../../index';
+
+.dashboard-container {
+  background-color: index.$bg-color;
+  min-height: 90vh;
+ 
+
+  main {
+    padding-top: 100px;
+    background-color: index.$bg-color;
+    display: flex;
+
+    .users-data-container {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      .users-data-head {
+        font-size: 24px;
+        font-family: index.$font-WorkSans;
+        color: index.$second-font-color;
+        font-weight: 500;
+      }
+
+      .user-cards-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+      }
+    }
+  }
+}

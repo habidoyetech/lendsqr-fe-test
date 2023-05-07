@@ -1,0 +1,50 @@
+@use '../index';
+
+.user-card-container {
+  width: 230px;
+  height: 160px;
+  border: 1px solid index.$first-font-color-less-opac;
+  background-color: index.$primary-color;
+  box-shadow: 3px 5px 20px index.$shadow-color;
+  border-radius: 4px;
+  
+  
+
+  .user-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 30px;
+
+    .user-card-logo-container {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: index.$blue-color-opac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .user-card-body {
+
+      .user-card-body-head {
+        font-family: index.$font-WorkSans;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: index.$second-font-color;
+      }
+
+      .user-card-body-number {
+        font-family: index.$font-WorkSans;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: index.$second-font-color;
+      }
+    }
+  }
+
+}

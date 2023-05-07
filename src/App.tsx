@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './app.scss'
+import './app.scss';
 import Auth from './Pages/LoginPage/Auth';
 
-
-
+interface RoutesProps {
+  children?: React.ReactNode;
+  location?: Partial<Location> | string;
+}
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
-        <Route path="/auth" element={<Auth />}/>
+        <Route path="/auth" element={<Auth/>}/>
       </Routes>
-    </BrowserRouter>
   );
 }
 

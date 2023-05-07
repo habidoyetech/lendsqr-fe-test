@@ -1,0 +1,25 @@
+@use '../index';
+
+.sidebarlink-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  
+  .sidebarlink-logo {
+    color: index.$first-font-color;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebarlinkname {
+    color: index.$first-font-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: index.$font-WorkSans;
+    opacity: 0.5;
+    text-align: center;
+  }
+}

@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import LogoWord from '../../mages/lendsqr.svg';
-import Logo from '../../images/Union.svg';
-import SideImage from '../../images/pablo-sign.svg';
-import './auth.scss';
+import React, {useState} from 'react'
+import LogoWord from '../../Images/lendsqr.svg';
+import Logo from '../../Images/Union.svg';
+import SideImage from '../../Images/pablo-sign.svg';
+import './authLogSign.scss'
 
-
-const Auth = () => {
+const AuthLogSign: React.FC = () => {
 
   const [type, setType] = useState('password')
+
   const [authMode, setAuthMode] = useState('signIn');
 
   const changeAuthMode = () => {
@@ -119,8 +119,6 @@ const Auth = () => {
         </div> 
       </div>
   )
-
-  
 }
 
-export default Auth;
+export default AuthLogSign
