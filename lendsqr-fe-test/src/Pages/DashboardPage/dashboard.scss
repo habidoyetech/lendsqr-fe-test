@@ -3,18 +3,25 @@
 .dashboard-container {
   background-color: index.$bg-color;
   min-height: 90vh;
- 
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
 
   main {
-    padding-top: 100px;
+    padding-top: 90px;
     background-color: index.$bg-color;
     display: flex;
+    width: 100%;
+    box-sizing: border-box;
 
     .users-data-container {
+      width: 100%;
       padding: 4rem 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      box-sizing: border-box;
       
       .users-data-head {
         font-size: 24px;
@@ -24,10 +31,54 @@
       }
 
       .user-cards-container {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        
+        display: grid;
+        width: 100%;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  main {
+
+    .users-data-container {
+
+      .user-cards-container {
+        grid-template-columns: repeat(3, auto);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .dashboard-container {
+
+    main {
+
+      .users-data-container {
+        width: calc(100% - 300px);
+        .user-cards-container {
+          grid-template-columns: repeat(3, auto);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .dashboard-container {
+
+    main {
+
+      .users-data-container {
+        width: calc(100% - 300px);
+        .user-cards-container {
+          grid-template-columns: repeat(4, auto);
+        }
       }
     }
   }

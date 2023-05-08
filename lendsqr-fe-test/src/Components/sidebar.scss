@@ -10,7 +10,20 @@
 
     .sidebar-head {
       padding-left: 2.5rem;
-    }
+
+      h2:first-child {
+
+        .sidebarlink-container {
+          font-size: 1.5rem;
+
+          .sidebarlinkname {
+            font-size: 1rem;
+            font-weight: 500;
+          }
+        }
+
+      }
+    }  
     
     .sidebarcategorylist-container {
 
@@ -49,7 +62,7 @@
             .sidebarlinkname {
               color: index.$first-font-color;
               font-weight: 400;
-              font-size: 16px;
+              font-size: .85rem;
               line-height: 19px;
               font-family: index.$font-WorkSans;
               opacity: 0.5;

@@ -16,8 +16,8 @@ const SideBarLink: React.FC<Props> = ({sideBarLink}) => {
           {sideBarLink.logo}
         </div>
         <div className='sidebarlinkname'>{sideBarLink.linkName}</div>
-        <div>
-          {sideBarLink.arrow && <img alt='' src={arrowDown}></img>} 
+        <div className='sideBarLinkArrow'>
+          {sideBarLink.arrow && <img alt='Arrow Down Logo' src={arrowDown}></img>} 
         </div>
       </div>
     </>

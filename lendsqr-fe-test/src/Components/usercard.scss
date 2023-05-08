@@ -1,12 +1,13 @@
 @use '../index';
 
 .user-card-container {
-  width: 230px;
+  min-width: 210px;
   height: 160px;
   border: 1px solid index.$first-font-color-less-opac;
   background-color: index.$primary-color;
   box-shadow: 3px 5px 20px index.$shadow-color;
   border-radius: 4px;
+  box-sizing: border-box;
   
   
 
