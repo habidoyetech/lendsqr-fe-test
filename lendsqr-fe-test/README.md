@@ -2,7 +2,7 @@
 <p align="center">Ultimate support system for leading agencies</p>
 
 <p align="center">
-  <a href="https://github.com/Habidoye97">
+  <a href="https://github.com/Habidoyetech">
     <img alt="Made by Abidoye Abiodun" src="https://img.shields.io/badge/-Github-5659EB?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Habidoye97" />
   </a>
  
@@ -27,7 +27,7 @@
 - Clone this repo to your local machine using:
 
 ```
-https://github.com/Habidoye97/lendsqr-fe-test-new
+https://github.com/Habidoye97/lendsqr-fe-test
 ```
 
 ### Setup
@@ -54,6 +54,7 @@ https://github.com/Habidoye97/lendsqr-fe-test-new
 
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Typescript](https://www.typescriptlang.org/) - TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions.
+- [SCSS](https://www.sass-lang.com/)
 
 ---
 
@@ -63,6 +64,9 @@ The Login page can be accessed with ```https://abiodun-abidoye-lendsqr-fe-test.n
 
 To view the Dashboard page ```https://abiodun-abidoye-lendsqr-fe-test.netlify.app/dashboard```
 
+To view the User Details Page ```https://abiodun-abidoye-lendsqr-fe-test.netlify.app/userdetails```
+
+To view option and filter click on the three dots and the table head respectively
 ## 🤔 Contributing
 
 > To get started...
