@@ -12,12 +12,16 @@ const Dashboard: React.FC = () => {
 
   const [sideBarIsShowing, setSideBarIsShowing] = useState<boolean>(false);
 
-  const {isLoading, data} = useQuery('users', () => {
+  const {isLoading, data, error} = useQuery('users', () => {
     return axios.get('https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users')
   })
 
   if (isLoading) {
     return <h2>Loading...</h2>
+  }
+
+  if (error) {
+    return <h2>Failed to fetch users</h2>
   }
    
   

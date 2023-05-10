@@ -63,13 +63,12 @@ export function FilterUserOption({showFilter, ...props}:filterUserProps) {
           <InputField name='Username' type='text' placeholder='User' idAttribute='username' onChange={handleChange}/>
           <InputField name='Email' type='email' placeholder='Email' idAttribute='email' onChange={handleChange}/>
           <InputField name='Date' type='date' placeholder='Date' idAttribute='date' onChange={handleChange}/>
-          <InputField name='' type='date' placeholder='Date' idAttribute='date' onChange={handleChange}/>
-          <InputField name='Date' type='date' placeholder='Date' idAttribute='date' onChange={handleChange}/>
+          <InputField name='Phone Number' type='number' placeholder='Phone Number' idAttribute='phoneNumber' onChange={handleChange}/>
+          <InputField name='Status' type='text' placeholder='Select' idAttribute='status' onChange={handleChange}/>
           <div className='buttons'>
             <ButtonNoP name='Reset' coloredBg={false}/>
             <ButtonNoP name='Filter' coloredBg={true}/>
           </div>
-          
         </form>
       </div>
       
