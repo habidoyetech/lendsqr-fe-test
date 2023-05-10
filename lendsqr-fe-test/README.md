@@ -2,8 +2,8 @@
 <p align="center">Ultimate support system for leading agencies</p>
 
 <p align="center">
-  <a href="https://github.com/Habidoyetech">
-    <img alt="Made by Abidoye Abiodun" src="https://img.shields.io/badge/-Github-5659EB?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Habidoye97" />
+  <a href="https://github.com/habidoyetech">
+    <img alt="Made by Abidoye Abiodun" src="https://img.shields.io/badge/-Github-5659EB?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/habidoyetech" />
   </a>
  
   
@@ -27,7 +27,7 @@
 - Clone this repo to your local machine using:
 
 ```
-https://github.com/Habidoye97/lendsqr-fe-test
+https://github.com/habidoyetech/lendsqr-fe-test
 ```
 
 ### Setup
@@ -77,7 +77,7 @@ To view option and filter click on the three dots and the table head respectivel
 
 ### Step 2
 
-- 👯 Clone this repo to your local machine using `https://github.com/Habidoye97/lendsqr-fe-test-new`
+- 👯 Clone this repo to your local machine using `https://github.com/habidoyetech/lendsqr-fe-test`
 
 ### Step 3
 
