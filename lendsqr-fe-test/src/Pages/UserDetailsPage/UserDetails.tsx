@@ -6,6 +6,8 @@ import Avatar from '../../Images/avatar.png';
 import { useQuery } from 'react-query';
 import Star from '../../Images/star.png';
 import StarBg from '../../Images/starbg.png';
+import UserDetailsBodyLayout from '../../Components/UserDetailsBodyLayout';
+import UserIdentity from '../../Components/UserIdentity';
 
 
 const UserDetails: React.FC = () => {
@@ -19,11 +21,15 @@ const UserDetails: React.FC = () => {
 
 
   if(isLoading) {
-    return <>Loading User...</>
+    return <h1>Loading User...</h1>
+  }
+
+  if(error) {
+    return <h1>Unable to fetch user</h1>
   }
 
   return (
-    <>
+    <>Personal Information
       <div className='user_details_container'>
         <Header setSideBarIsShowing={setSideBarIsShowing} sideBarIsShowing={sideBarIsShowing}/>
         <main>
@@ -69,8 +75,8 @@ const UserDetails: React.FC = () => {
                     </div>
                   </div>
                   <div className='amount'>
-                    <h4> &#8358;200,000.00</h4>
-                    <p>0233822850/Providus Bank</p>
+                    <h4> &#8358;{data.accountBalance}</h4>
+                    <p>{`${data.accountNumber}/Providus Bank`}</p>
                   </div>
                 </div>
                 <ul className='head-link'>
@@ -82,7 +88,42 @@ const UserDetails: React.FC = () => {
                   <li>App and System</li>
                 </ul>
               </div>
+              <div className='user-information'>
+                <UserDetailsBodyLayout headName='Personal Information'>
+                  <UserIdentity identityHead='FULL NAME' identityValue={`${data.profile.firstName} ${data.profile.lastName}`}/>
+                  <UserIdentity identityHead='PHONE NUMBER' identityValue={`${data.profile.phoneNumber}`}/>
+                  <UserIdentity identityHead='EMAIL ADDRESS' identityValue={`${data.emaidl}`}/>
+                  <UserIdentity identityHead='BVN' identityValue={`${data.profile.bvn}`}/>
+                  <UserIdentity identityHead='GENDER' identityValue={`${data.profile.gender}`}/>
+                  <UserIdentity identityHead='MARITAL STATUS' identityValue='Single'/>
+                  <UserIdentity identityHead='CHILDREN' identityValue='None'/>
+                  <UserIdentity identityHead='TYPE OF RESIDENCE' identityValue={`${data.profile.address}`}/>
+                </UserDetailsBodyLayout>
+                <UserDetailsBodyLayout headName='Education and Employment'>
+                  <UserIdentity identityHead='LEVEL OF EDUCATION' identityValue={`${data.education.level}`}/>
+                  <UserIdentity identityHead='EMPLOYMENT STATUS' identityValue={`${data.education.employmentStatus}`}/>
+                  <UserIdentity identityHead='SECTOR OF EMPLOYMENT' identityValue={`${data.education.sector}`}/>
+                  <UserIdentity identityHead='DURATION OF EMPLOYMENT' identityValue={`${data.education.duration}`}/>
+                  <UserIdentity identityHead='OFFICE EMAIL' identityValue={`${data.education.officeEmail}`}/>
+                  <UserIdentity identityHead='MONTHLY INCCOME' identityValue={`N${data.education.monthlyIncome[1]} - N${data.education.monthlyIncome[0]}`}/>
+                  <UserIdentity identityHead='LOAN REPAYMENT' identityValue={`N${data.education.loanRepayment}`}/>
+                  
+                </UserDetailsBodyLayout>
+                <UserDetailsBodyLayout headName='Social'>
+                  <UserIdentity identityHead='TWITTER' identityValue={`${data.socials.twitter}`}/>
+                  <UserIdentity identityHead='FACEBOOK' identityValue={`${data.socials.facebook}`}/>
+                  <UserIdentity identityHead='INSTAGRAM' identityValue={`${data.socials.instagram}`}/>
+                </UserDetailsBodyLayout>
+                <UserDetailsBodyLayout headName='Guarantor'>
+                  <UserIdentity identityHead='FULL NAME' identityValue={`${data.guarantor.firstName} ${data.guarantor.lastName}`}/>
+                  <UserIdentity identityHead='PHONE NUMBER' identityValue={`${data.guarantor.phoneNumber}`}/>
+                  <UserIdentity identityHead='EMAIL ADDRESS' identityValue={`${data.guarantor.email}`}/>
+                  <UserIdentity identityHead='RELATIONSHIP' identityValue={`${data.guarantor.gender}`}/>
+                  
+                </UserDetailsBodyLayout>
+              </div>
             </div>
+            
           </aside>
         </main>
       </div>
