@@ -1,0 +1,28 @@
+@use '../index';
+
+.input-container {
+  width: 100%;
+  padding: .5rem;
+  font-family: index.$font-WorkSans;
+
+  .input-label {
+    display: block;
+    font-weight: 500;
+    font-size: .9rem;
+    color: index.$second-font-color;
+    
+  }
+
+  input {
+    border: 1px solid #213F7D;
+    outline: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    width: 100%;
+    margin-top: .4rem;
+    display: block;
+    color: index.$first-font-color-opac;
+    opacity: 0.3;
+    // box-shadow: 0px 0px 50px -3px rgba(0,0,0,0.1);
+  }
+}

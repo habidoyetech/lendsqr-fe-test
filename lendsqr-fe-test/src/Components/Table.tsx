@@ -3,10 +3,25 @@ import './table.scss';
 import vector3 from '../Images/vector3.png';
 import Items from './Items';
 import ReactPaginate from 'react-paginate';
+import { FilterUserOption } from './DashboardOptions';
 
 interface Props {
   data: any | undefined;
   itemsPerPage: number;
+}
+
+interface Profile {
+  firstName:string;
+  lastName: string;
+}
+
+interface User {
+  orgName: string;
+  profile: Profile;
+  email: string;
+  phoneNumber: string;
+  createdAt: string;
+  id: number;
 }
 
 
@@ -31,6 +46,7 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
+  const [filterForm, setFilterForm] = useState(false)
 
   useEffect(() => {
     // Fetch items from another resources.
@@ -57,21 +73,31 @@ const Table: React.FC<Props> = ({data, itemsPerPage}) => {
                 <tr>
                   {tableHead.map((head, index) => {
                     return (
-                      <th key={index}>
+                      <th key={index} onClick={()=> setFilterForm(!filterForm)}>
                         <div className='table-data-head-container'>
                           <span className='table-data-head'>{head}</span> 
-                          <span className='table-data-img-container'><img src={vector3} alt="drop" /></span> 
+                          <span className='table-data-img-container' onClick={()=> {setFilterForm(!filterForm); console.log(filterForm)}}><img src={vector3} alt="drop" /></span> 
                         </div>
                       </th>
                     )
-                  })} 
+                  })}
+                  
                 </tr>
+
+                
               </thead>
+              
               <tbody>
-                <Items data={currentItems} />
+                {currentItems?.map((user: User) => {
+                  return (
+                    <Items key={user.id} data={user} />
+                  )
+                })}
+                
               </tbody>
               
             </table>
+            <FilterUserOption showFilter={filterForm}  />
           </div>
         
     

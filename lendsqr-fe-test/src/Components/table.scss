@@ -2,13 +2,14 @@
 
 .table-container {
   background-color: index.$primary-color;
-  padding: 2rem;
+  padding: 1.5rem;
   // width: fit-content;
   width: 100%;
   margin-top: 3rem;
   border-radius: 10px;
   box-sizing: border-box;
   overflow-x: scroll;
+  position: relative;
 
   table {
     background-color: index.$primary-color;
@@ -20,12 +21,13 @@
     thead {
       
       tr {
+        z-index: 2;
+        cursor: pointer;
         
         th {
   
           font-size: 12px;
           line-height: 13px;
-          
           font-weight: 600;
           font-family: index.$font-WorkSans;
           text-align: left;
@@ -33,9 +35,14 @@
   
           .table-data-head-container {
             display: flex;
-            gap: 5px;
+            gap: .85rem;
+            z-index: 1;
+            cursor: pointer;
   
             .table-data-img-container {
+
+              z-index: 1;
+              cursor: pointer;
               img {
                 width: 13px;
                 height: 8px;
@@ -45,20 +52,21 @@
   
           
         }
+
       }
     }
   
     tbody {
       tr {
-        z-index: 5;
+        // z-index: 2;
         border-bottom: 1px solid index.$first-font-color-opac-01;
+        position: relative;
         
         td {
           font-size: 14px;
           line-height: 14px;
           font-family: index.$font-WorkSans;
           font-weight: 400;
-          
           padding: .2rem 1rem .5rem 0;
         }
 
@@ -74,8 +82,14 @@
             color: index.$status-active-color;
             line-height: 16px;
             font-weight: 400;
+            
           }
           
+        }
+
+        td:last-child {
+          cursor: pointer;
+          // position: relative;
         }
       }
       tr:last-child {
